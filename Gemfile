@@ -21,3 +21,4 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 # gem 'jekyll-relative-links'
 
 gem "webrick", "~> 1.7"
+gem "minima", "~> 2.5.1"
