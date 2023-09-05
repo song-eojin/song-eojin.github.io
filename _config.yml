@@ -1,7 +1,8 @@
 # The Site Configuration
 
-# Import the theme
-theme: jekyll-theme-chirpy
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
+baseurl: ''
 
 # the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
 lang: ko-KR
@@ -17,9 +18,8 @@ tagline: go to github address # it will display as the sub-title
 
 # description: 
 
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
-baseurl: ''
+# Import the theme
+remote-theme: jekyll-theme-chirpy
 url: 'https://song-eojin.github.io'
 
 github:
