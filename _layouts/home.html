@@ -1,33 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-
         {%- include head.html -%}
-
         {% assign reversed_posts = site.posts | reverse %}
-
         {% if reversed_posts %}
             <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
         {% endif %}
-    </head>
+        
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <body>
         <div class="book">
-
             {%- include toc-date.html -%}
 
             <div class="book-body">
-                <div class="book-header" role="navigation">
+
+                <div class="book-header" role="navigation">                    
                     <!-- Title -->
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
-                        {% if page.title %}
-                            <a href="." >{{ page.title | escape }}</a>
+                        {% if page.longtitle %}
+                            <a href="." >{{ page.longtitle | escape }}</a>
                         {% else %}
-                            <a href="." >{{ site.title | escape }}</a>
+                            <a href="." >{{ site.longtitle | escape }}</a>
                         {% endif %}
                     </h1>
                 </div>
-
                 <div class="body-inner">
                     {%- include body.html -%}
 

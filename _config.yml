@@ -1,21 +1,24 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            INSIGHT
+longtitle:        'INSIGHT : 기록을 통한 나만의 개발 인사이트를 얻기 위한 블로그'
+author:           eojin
+email:            feshed528@naver.com
 description: >
   Build Jekyll site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
+url:              'https://song-eojin.github.io'
 baseurl:          '/jekyll-gitbook'
 rss:              RSS
+
+lang: ko-KR
 
 # bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
 
+# toc(Table of contents) : 블로그 포스팅 옆 스크롤을 따라오는 목차. 사용은 true, 아니라면 false 하기.
 toc:
   enabled: true
   h_min:   1
